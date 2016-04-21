@@ -91,13 +91,13 @@
     height:40px;
     width: 50px;
     color: #fff;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: inherit;
     font-size: 35px;
     padding: 0;
     line-height: 1;
     box-shadow: none;
-    background-color: rgba(38, 50, 56, 0.5);
+    background-color: rgba(38, 50, 56, 0.95);
     float: left;
 }
 .menu .btn-open-menu:focus{
@@ -121,19 +121,18 @@
     display: none;
     border-bottom: none;
     border-right: 2px solid #fff;
-    background-color: rgba(38, 50, 56, 0.5);
+    background-color: rgba(38, 50, 56, 0.95);
     float: left;
 }
 .main-menu li{
-    border-top:2px solid #fff;
-    border-bottom:2px solid #fff;
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
     height: 40px;
 }
 .main-menu li>a{
     font-size: 18px;
     font-weight: 300;
     color: #fff;
-    text-transform: uppercase;
     padding: 5px 15px;
     border:none;
 }
@@ -150,15 +149,15 @@
     background: transparent;
 }
 .main-menu .dropdown-menu{
-    background-color: rgba(38, 50, 56, 0.5);
+    background-color: rgba(38, 50, 56, 0.95);
     -moz-column-gap: 10px;
     -webkit-column-count: 3;
     column-count: 3;
     column-gap: 10px;
-    border:2px solid #fff;
+    border-bottom:1px solid #fff;
     border-top:none;
-    margin-top: 2px;
     border-radius: inherit;
+    z-index: -1;
 }
 .main-menu .dropdown-menu li{
     border: none;
@@ -528,6 +527,9 @@
     font-size: 18px;
     color: #303030;
 }
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{
+    background: transparent;
+}
 @media (max-width: 1199px){
     .about-block .title-about{
         left:150px;
@@ -627,6 +629,7 @@
         -webkit-column-count: 1;
         column-count: 1;
         background-color: rgba(38, 50, 56, 0.8);
+        z-index: 0;
     }
     .about-block .title-about {
         width: 205px;
@@ -650,7 +653,7 @@
         display: block;
     }
     .main-menu li{
-        border-left:2px solid #fff;
+        border-left:1px solid #fff;
         border-right:2px solid #fff;
         border-top:none;
         border-bottom:none;

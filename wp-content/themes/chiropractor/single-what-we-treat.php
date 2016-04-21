@@ -13,7 +13,7 @@ get_header(); ?>
     <?php $image = get_field('background'); ?>
         <div class="header-post">
             <div class="bg-post">
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/page-templates/assets/images/2-layers.jpg" alt="<?php echo $image['alt']; ?>" />
             </div>
             <div class="content-header-post">
                 <div class="logo-inner-page">

@@ -31,5 +31,6 @@ $(document).ready(function () {
         var google = $(this).attr("datatype");
         $("#"+google).attr('id',google).fadeOut("slow");
     }
-    )
+    );
+    $(".main-menu").prepend('<li><hr></li>');
 });

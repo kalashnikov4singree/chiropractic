@@ -13,7 +13,7 @@ get_header(); ?>
         <div class="row">
             <div class="img-bg">
                 <a href="/">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/page-templates/assets/images/background.png" alt="" style="width: 100%;">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/page-templates/assets/images/background.jpg" alt="" style="width: 100%;">
                 </a>
             </div>
             <div class="content-main-screen">
@@ -66,7 +66,7 @@ get_header(); ?>
     <div class="container-fluid">
         <div class="row">
             <div class="img-about">
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/page-templates/assets/images/background-stairs.png" alt="" style="width: 100%">
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/page-templates/assets/images/background-stairs.jpg" alt="" style="width: 100%">
             </div>
             <div class="title-about">
                 What is
