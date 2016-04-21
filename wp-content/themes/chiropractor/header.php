@@ -37,7 +37,20 @@
         </span>
 	</div>
 	<?php //wp_nav_menu('menu=main-menu&menu_class=nav nav-tabs main-menu'); ?>
-	<ul class="nav nav-tabs main-menu">
+	<?php
+	wp_nav_menu( array(
+			'menu'              => 'main-menu',
+			'theme_location'    => 'chiropractor',
+			'depth'             => 2,
+			//'container'         => 'div',
+			//'container_class'   => 'collapse navbar-collapse',
+			//'container_id'      => 'bs-example-navbar-collapse-1',
+			'menu_class'        => 'nav nav-tabs main-menu',
+			'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+			'walker'            => new wp_bootstrap_navwalker())
+	);
+	?>
+	<!--<ul class="nav nav-tabs main-menu">
 		<li><hr></li>
 		<li role="presentation"><a href="#">Home</a></li>
 		<li role="presentation"><a href="#">WHO WE ARE</a></li>
@@ -68,5 +81,5 @@
 		</li>
 		<li role="presentation"><a href="#">blog</a></li>
 		<li role="presentation"><a href="#">contac us</a></li>
-	</ul>
+	</ul>-->
 </div>

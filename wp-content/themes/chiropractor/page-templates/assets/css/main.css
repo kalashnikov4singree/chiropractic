@@ -27,12 +27,65 @@
     height: 15px;
     border: 2px solid #FD9A00;
 }
+.header-post{
+    position: relative;
+    border-bottom: 4px solid #03b43d;
+    margin-bottom: 40px;
+}
+.header-post .bg-post img {
+    width: 100%;
+}
+.header-post .content-header-post{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.header-post .content-header-post .logo-inner-page{
+    width: 251px;
+    margin: 20px auto;
+}
+.header-post .content-header-post .phone-number{
+    position: absolute;
+    top:50px;
+    right:60px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    color: #fff;
+}
+.header-post .bottom-header{
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+.header-post .bottom-header .title h1{
+    color: black;
+    font-size: 130px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+}
+.header-post .bottom-header .awards-content{
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    width: 270px;
+    color: white;
+    font-size: 12px;
+}
+.header-post .bottom-header .awards-content .awards-text{
+    margin-bottom: 40px;
+}
+.header-post .social-buttons {
+    padding-left: 65px;
+}
 .menu{
     position: absolute;
     z-index: 2;
     top: 50px;
     left:45px;
-    width: 800px;
 }
 .menu .btn-open-menu{
     height:40px;
@@ -53,6 +106,9 @@
 .menu .hamburger {
     float: left;
 }
+.menu .menu-main-menu-container{
+    float: left;
+}
 .menu .hamburger .open-menu{
     font-size: 10px;
     font-family: SEGOE-UI;
@@ -67,22 +123,25 @@
     border-right: 2px solid #fff;
     background-color: rgba(38, 50, 56, 0.5);
     float: left;
-    height: 40px;
 }
 .main-menu li{
     border-top:2px solid #fff;
     border-bottom:2px solid #fff;
+    height: 40px;
 }
 .main-menu li>a{
     font-size: 18px;
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
-    padding: 5.5px 15px;
+    padding: 5px 15px;
     border:none;
 }
-.main-menu>li>a:focus, .main-menu>li>a:hover{
+.main-menu>li>a:focus, .main-menu>li>a:hover,
+.main-menu>li.active>a, .main-menu>li.active>a:focus, .main-menu>li.active>a:hover{
     background-color: transparent;
+    border:none;
+    color: #fff;
 }
 .main-menu  .open{
     border-bottom: none;
@@ -133,7 +192,7 @@
     padding-left: 16px;
     letter-spacing: -0.5px;
 }
-.main-screen .content-main-screen .awards-text .top-text{
+.awards-text .top-text{
     margin-bottom: 10px;
 }
 .main-screen .content-main-screen .logo-block{
@@ -465,6 +524,10 @@
 .footer-block .work-day ul>li{
     margin-bottom: 5px;
 }
+.content-post{
+    font-size: 18px;
+    color: #303030;
+}
 @media (max-width: 1199px){
     .about-block .title-about{
         left:150px;
@@ -515,6 +578,25 @@
     }
     .testimonials-block .left-side{
         height: 447px;
+    }
+    .header-post .content-header-post .phone-number {
+        top: 20px;
+    }
+    .header-post .content-header-post .logo-inner-page{
+        width: 150px;
+        margin: 10px auto;
+    }
+    .header-post .content-header-post .logo-inner-page img{
+        max-width: 100%;
+    }
+    .header-post .bottom-header .title h1{
+        font-size: 50px;
+    }
+    .header-post .bottom-header .awards-content{
+        right: 0;
+    }
+    .header-post .bottom-header .awards-content .awards-text{
+        margin-bottom: 15px;
     }
 }
 @media (max-width: 767px){
@@ -573,6 +655,7 @@
         border-top:none;
         border-bottom:none;
         width: 100%;
+        height: auto;
     }
     .about-block .text-about{
         font-size: 18px;
@@ -644,4 +727,15 @@
     .footer-block .copyright{
         margin-bottom: 35px;
     }
+
+    .header-post .bottom-header{
+        bottom: 0;
+    }
+    .header-post .bottom-header .title h1{
+        font-size: 24px;
+    }
+    .header-post .content-header-post .logo-inner-page,.header-post .content-header-post .phone-number,.header-post .bottom-header .awards-content{
+        display: none;
+    }
+
 }

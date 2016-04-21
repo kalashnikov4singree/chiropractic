@@ -12,7 +12,9 @@ get_header(); ?>
     <div class="container-fluid">
         <div class="row">
             <div class="img-bg">
-                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/page-templates/assets/images/background.png" alt="" style="width: 100%;">
+                <a href="/">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/page-templates/assets/images/background.png" alt="" style="width: 100%;">
+                </a>
             </div>
             <div class="content-main-screen">
                 <div class="awards-content pull-right">
@@ -450,7 +452,7 @@ get_header(); ?>
 </div>
 
 <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.331047088169!2d-73.98610704871335!3d40.75474304283435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzE3LjEiTiA3M8KwNTknMDIuMSJX!5e0!3m2!1sen!2sua!4v1461070700851" frameborder="0" style="border:0;pointer-events:none" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.331047088169!2d-73.98610704871335!3d40.75474304283435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzE3LjEiTiA3M8KwNTknMDIuMSJX!5e0!3m2!1sen!2sua!4v1461070700851"  style="border:0;pointer-events:none" allowfullscreen></iframe>
 </div>
 
 <?php get_footer(); ?>

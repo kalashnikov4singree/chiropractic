@@ -367,3 +367,110 @@ require get_template_directory() . '/inc/template-tags.php';
  * @since Twenty Fifteen 1.0
  */
 require get_template_directory() . '/inc/customizer.php';
+
+require_once('wp_bootstrap_navwalker.php');
+
+//if ( ! function_exists( 'red_book_cp' ) ) {
+
+//// Опишем требуемый функционал
+//	function red_book_cp() {
+//
+//		$labels = array(
+//			'name'                => _x( 'Красная книга', 'Post Type General Name', 'red_book' ),
+//			'singular_name'       => _x( 'Красная книга', 'Post Type Singular Name', 'red_book' ),
+//			'menu_name'           => __( 'Красная Книга', 'red_book' ),
+//			'parent_item_colon'   => __( 'Родительский:', 'red_book' ),
+//			'all_items'           => __( 'Все записи', 'red_book' ),
+//			'view_item'           => __( 'Просмотреть', 'red_book' ),
+//			'add_new_item'        => __( 'Добавить новую запись в Красную Книгу', 'red_book' ),
+//			'add_new'             => __( 'Добавить новую', 'red_book' ),
+//			'edit_item'           => __( 'Редактировать запись', 'red_book' ),
+//			'update_item'         => __( 'Обновить запись', 'red_book' ),
+//			'search_items'        => __( 'Найти запись', 'red_book' ),
+//			'not_found'           => __( 'Не найдено', 'red_book' ),
+//			'not_found_in_trash'  => __( 'Не найдено в корзине', 'red_book' ),
+//		);
+//		$args = array(
+//			'labels'              => $labels,
+//			'supports'            => array( 'title', 'editor', 'excerpt', ),
+//			'taxonomies'          => array( 'red_book_tax' ), // категории, которые мы создадим ниже
+//			'public'              => true,
+//			'menu_position'       => 5,
+//			'menu_icon'           => 'dashicons-book',
+//		);
+//		register_post_type( 'red_book', $args );
+//
+//	}
+//
+//	add_action( 'init', 'red_book_cp', 0 ); // инициализируем
+//
+//}
+
+if ( ! function_exists( 'what_we_treat_cp' ) ) {
+// Опишем требуемый функционал
+	function what_we_treat_cp() {
+
+		$labels = array(
+			'name'                => _x( 'What we treat', 'Post Type General Name', 'what-we-treat'),
+			'singular_name'       => _x( 'What we treat', 'Post Type Singular Name', 'what-we-treat'),
+			'menu_name'           => __( 'What we treat', 'what-we-treat'),
+			'parent_item_colon'   => __( 'Parent:', 'what-we-treat'),
+			'all_items'           => __( 'All What we treat', 'what-we-treat'),
+			'view_item'           => __( 'View', 'what-we-treat'),
+			'add_new_item'        => __( 'Add new what we treat', 'what-we-treat'),
+			'add_new'             => __( 'Add new ', 'what-we-treat'),
+			'edit_item'           => __( 'Edit', 'what-we-treat'),
+			'update_item'         => __( 'Update', 'what-we-treat'),
+			'search_items'        => __( 'Find', 'what-we-treat'),
+			'not_found'           => __( 'Not found', 'what-we-treat'),
+			'not_found_in_trash'  => __( 'Not found in trash', 'what-we-treat'),
+		);
+		$args = array(
+			'labels'              => $labels,
+			'show_ui' => true,
+			'has_archive' => true,
+			'supports'            => array( 'title', 'editor', 'excerpt','thumbnail', ),
+			'taxonomies'          => array( 'post_type_tax' ), // категории, которые мы создадим ниже
+			'public'              => true,
+			'menu_position'       => 5,
+			'menu_icon'           => 'dashicons-portfolio',
+		);
+		register_post_type( 'what-we-treat', $args );
+
+	}
+
+	add_action( 'init', 'what_we_treat_cp', 0 ); // инициализируем
+}
+//if ( ! function_exists( 'post_type_tax' ) ) {
+//
+//// Опишем требуемый функционал
+//	function post_type_tax() {
+//
+//		$labels = array(
+//			'name'                       => _x( 'Taxonomies Post Type', 'Taxonomy General Name', 'post_type' ),
+//			'singular_name'              => _x( 'Taxonomy Post Type', 'Taxonomy Singular Name', 'post_type' ),
+//			'menu_name'                  => __( 'Taxonomies', 'post_type' ),
+//			'all_items'                  => __( 'Taxonomies', 'post_type' ),
+//			'parent_item'                => __( 'Parent taxonomy post type', 'post_type' ),
+//			'parent_item_colon'          => __( 'Parent taxonomy post:', 'post_type' ),
+//			'new_item_name'              => __( 'New taxonomy', 'post_type' ),
+//			'add_new_item'               => __( 'Add new taxonomy', 'post_type' ),
+//			'edit_item'                  => __( 'Edit taxonomy', 'post_type' ),
+//			'update_item'                => __( 'Update Taxonomy', 'post_type' ),
+//			'search_items'               => __( 'Find', 'post_type' ),
+//			'add_or_remove_items'        => __( 'Add or delete taxonomy', 'post_type' ),
+//			'choose_from_most_used'      => __( 'Find in popular', 'post_type' ),
+//			'not_found'                  => __( 'Not Found', 'post_type' ),
+//		);
+//		$args = array(
+//			'labels'                     => $labels,
+//			'hierarchical'               => true,
+//			'public'                     => true,
+//		);
+//		register_taxonomy( 'post_type_tax', array( 'post_type' ), $args );
+//
+//	}
+//
+//	add_action( 'init', 'post_type_tax', 0 ); // инициализируем
+//
+//}
