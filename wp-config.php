@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'chiropractor');
+define('DB_NAME', 'chiro-db');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'chiro-db');
 
 /** MySQL database password */
-define('DB_PASSWORD', '4eJIsea8');
+define('DB_PASSWORD', 'I8u8V5y9');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

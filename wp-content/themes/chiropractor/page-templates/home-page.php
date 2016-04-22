@@ -409,30 +409,7 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="form">
-                <form>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="First name">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Last name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email (Required)">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Telephone">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <button type="submit" class="btn btn-default btn-block btn-sent">Submit</button>
-                    </div>
-                </form>
+                <?php echo do_shortcode( '[contact-form-7 id="51" title="Contact form 1"]' ); ?>
             </div>
             <div class="contact-data col-xs-12">
                 <ul>
