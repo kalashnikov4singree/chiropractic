@@ -455,6 +455,12 @@
     font-size: 14px;
     padding-left: 20px;
 }
+.form .form-control.wpcf7-not-valid{
+    border:1px solid red;
+}
+div.wpcf7-validation-errors{
+    border: none !important;
+}
 .form textarea{
     max-width: 100%;
     min-height: 240px;
